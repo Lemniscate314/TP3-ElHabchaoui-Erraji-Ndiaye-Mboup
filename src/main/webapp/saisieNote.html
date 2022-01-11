@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insertion note</title>
+
+</head>
+<body>
+<form method = "get" action="Serv">
+    <label>Nom:</label>
+    <input type = "text" name = "nom" required>
+    <br>
+    <br>
+    <label> Prenom:</label>
+    <input type = "text" name = "prenom" required>
+    <br>
+    <br>
+    <label> Note</label>
+    <input type = "text" name = "note" required>
+    <br>
+    <br>
+
+    <label for="pet-select">Choisir une spécialité:</label>
+
+    <select name="pets" id="pet-select">
+
+        <option value="info">--Choisir une spécialité--</option>
+        <option value="Icy">informatique et Cybersécurité</option>
+
+        <option value="GI">genie Industriel</option>
+        <option value="GM">genie Math</option>
+
+        <option value=""GC>genie civil</option>
+
+        <option value="MT">genie mécatronique</option>
+
+        <option value="II">Informatique industrielle</option>
+
+    </select>
+    <input type = "submit" name="envoyer" value ="envoyer">
+</form>
+</body>
+</html>
