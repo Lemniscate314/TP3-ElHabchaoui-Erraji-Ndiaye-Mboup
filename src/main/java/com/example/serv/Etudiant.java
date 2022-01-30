@@ -4,7 +4,12 @@ public class Etudiant {
    protected String nom;
     protected String prenom;
     protected String formation;
-    double note;
+    protected double note;
+    public Etudiant ()
+    {
+        nom = "";
+        prenom="";
+    }
 
     public Etudiant(String nom, String prenom, String formation) {
         this.nom = nom;
@@ -30,6 +35,18 @@ public class Etudiant {
 
     public double getNote() {
         return note;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setFormation(String formation) {
+        this.formation = formation;
     }
 
     @Override

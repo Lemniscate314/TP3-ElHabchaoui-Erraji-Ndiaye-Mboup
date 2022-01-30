@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+<jsp:useBean id ="etu" class = "com.example.serv.Etudiant" scope = "page"/>
+<jsp:setProperty name="etu" property="*"/>
 <form method = "get" action="Serv">
+    <div class="inputbox">
     <label>Nom:</label>
     <input type = "text" name = "nom" required>
+    </div>
     <br>
     <br>
+    <div class="inputbox">
     <label> Prenom:</label>
     <input type = "text" name = "prenom" required>
+    </div>
     <br>
     <br>
-
+    <div class="inputbox">
     <label for="idformation">Choisir une spécialité:</label>
 
     <select name="formation" id="idformation">
@@ -34,7 +41,10 @@
 
 
     </select>
+    </div>
+    <div class="inputbox">
     <input type = "submit" name="envoyer" value ="envoyer">
+    </div>
 
 
 </form>

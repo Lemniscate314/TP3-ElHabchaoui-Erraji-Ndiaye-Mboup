@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Insertion note</title>
+    <link rel="stylesheet" href="index.css" />
 
 </head>
 <body>
 <form method = "get" action="Serv">
-    <label>Nom:</label>
-    <input type = "text" name = "nom" required>
-    <br>
-    <br>
-    <label> Prenom:</label>
-    <input type = "text" name = "prenom" required>
-    <br>
-    <br>
-    <label> Note</label>
-    <input type = "text" name = "note" required>
-    <br>
-    <br>
+    <div class="inputbox">
 
+    <label>Nom:</label>
+        <br>
+
+    <input type = "text" name = "nom" required>
+    </div>
+
+    <div class="inputbox">
+    <label> Prenom:</label>
+        <br>
+
+    <input type = "text" name = "prenom" required>
+        </div>
+
+    <div class="inputbox">
+    <label> Note</label>
+        <br>
+    <input type = "text" name = "note" required>
+    </div>
+    <br>
+    <div class="inputbox">
     <label for="pet-select">Choisir une spécialité:</label>
+        <br>
+
 
     <select name="pets" id="pet-select">
 
@@ -37,7 +49,11 @@
         <option value="II">Informatique industrielle</option>
 
     </select>
+    </div>
+    <div class="inputbox">
     <input type = "submit" name="envoyer" value ="envoyer">
+    </div>
+
 </form>
 </body>
 </html>

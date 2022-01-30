@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Identification</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
 <form method = "get" action ="Serv">
-    <label>Votre pseudo:</label>
-    <input type = "text" name = "pseudo" required>
-    <br>
-    <br>
-    <label> Votre mot de passe :</label>
-    <input type = "text" name = "password" required>
-    <br>
-    <br>
-    <input type = "submit" name="se connecter" value ="se connecter">
+    <div class="inputbox">
+        <span>votre pseudo</span>
+        <br>
+        <input type="text" name = "pseudo" required>
+
+    </div>
+    <div class="inputbox">
+        <span>Password</span>
+        <br>
+        <input type="text" name= "password" required>
+
+    </div>
+    <div class="inputbox">
+        <input type="submit" name = "se connecter" value="submit">
+    </div>
 </form>
 
 
